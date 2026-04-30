@@ -1,5 +1,12 @@
 # Try Not To Die
 
+##  Grupo
+- Bernardo Drummond Oliveira Penna
+- Júlia Cruz Menezes
+- Verônica Fernandes Silva
+- Filipe Soares Palhares de Oliveira
+- Ítalo Gomes Bragança
+
 ##  Descrição
 Ahh eu adoro essa região... Meio do continente, clima ameno, pessoa legais... definitivamente um lugar para se viver.
 
