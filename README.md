@@ -2,6 +2,7 @@
 
 ##  Descrição
 Ahh eu adoro essa região... Meio do continente, clima ameno, pessoa legais... definitivamente um lugar para se viver.
+
 As pessoas daqui nunca me deram trabalho, sempre cuidaram se seus próprios problemas e muito raramente se envolviam em situações difíceis de lidar, exceto por uma pessoa.
 Como posso descreve-lo? Ele é uma criatura bem peculiar, quase parece de outro mundo.
 Mora sozinho na região rural e - tenta - participar das produções. E por muito tempo participou... até descobrirem que era ele estava regando as plantações com herbicida.
