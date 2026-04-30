@@ -12,7 +12,7 @@ Ahh eu adoro essa região... Meio do continente, clima ameno, pessoa legais... d
 
 As pessoas daqui nunca me deram trabalho, sempre cuidaram se seus próprios problemas e muito raramente se envolviam em situações difíceis de lidar, exceto por uma pessoa.
 
-Como posso descreve-lo? Ele é uma criatura bem peculiar, quase parece de outro mundo.
+Como posso descrevê-lo? Ele é uma criatura bem peculiar, quase parece de outro mundo.
 
 Mora sozinho na região rural e - tenta - participar das produções. E por muito tempo participou... até descobrirem que era ele estava regando as plantações com herbicida. Desde então todos dão trabalhos "café com leite" à ele, para ele não se sentir muito excluído sabe..
 
@@ -24,7 +24,7 @@ Enfim, estava todo muito feliz, todo mundo no seu canto, sem explosões no meio 
 
 Coptolorg, o rei das trevas, invandiu o charmoso paiseco, e com sua avareza tomou conta de cada uma da sete regiões de Conosgo (sim esse é o nome do país, estava tentando evitar dizer isso em voz alta). Enfim, as regiões são: Rural, onde mora nosso herói de coração puro e cerébro nulo. Florestal, onde moram... aranhas? eu nunca fui lá, eu não sei. Culinária, onde estão os melhores chefes do país. Aposentada, um cantinho para os idosos ficarem. Mineiradora, o nome é bem auto-explicativo. Industrial, que ironicamente não produz em escala industrial. E Urbana, onde moram os líderes e... outras pessoas. Há também uma feira onde se pode comprar quinquilharias sortidas.
 
-E em cada uma das regiões houveram mudanças drásticas na produção tranquila e moderada de... Conosgo. Agora os trablahadores eram obrigados a trablhar 8 horas por dia e 6 dias por semana, consegue imaginar rotina mais trágica?. Além disso, suas metas eram monitoradas por uma classe de feiticeiros, os Magos Especialistas Registradores Diários de Atividades.
+E em cada uma das regiões houveram mudanças drásticas na produção tranquila e moderada de... Conosgo. Agora os trablahadores eram obrigados a trabalhar 8 horas por dia e 6 dias por semana, consegue imaginar rotina mais trágica?. Além disso, suas metas eram monitoradas por uma classe de feiticeiros, os Magos Especialistas Registradores Diários de Atividades.
 Mas uma coisa que Coptolorg não contava era com a bondade de coração do nosso herói, ou a minha, porque sei que se deixá-lo por conta própria ele morrerá nos primeiros 30 minutos de aventura e provavelmente nem saberá o que matou ele.
 
 Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho que pode ser boa coisa, desde que deram um trabalho fantasma à ele eu fiquei desatarefado, estava um tédio, pelo menos agora... COMO ASSIM ELE JÁ PRECISA DE MINHA AJUDA, ELE NEM SAIU DE CASA AINDA...
