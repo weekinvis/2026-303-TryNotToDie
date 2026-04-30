@@ -39,4 +39,4 @@ Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho 
 - Godot Engine
 
 ## Logo
-- <img src="Logo.png" alt="Logo" width="500">
+
