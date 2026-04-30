@@ -30,7 +30,7 @@ Mas uma coisa que Coptolorg não contava era com a bondade de coração do nosso
 Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho que pode ser boa coisa, desde que deram um trabalho fantasma à ele eu fiquei desatarefado, estava um tédio, pelo menos agora... COMO ASSIM ELE JÁ PRECISA DE MINHA AJUDA, ELE NEM SAIU DE CASA AINDA...
 
 ## Link da planilha de acessibilidade
-https://docs.google.com/spreadsheets/d/1dkuoAKhzCxO3Dyvumb3WQBkTx3__kUGrkdoGaXqfHdI/edit?usp=sharing
+[https://docs.google.com/spreadsheets/d/1dkuoAKhzCxO3Dyvumb3WQBkTx3__kUGrkdoGaXqfHdI/edit?usp=sharing](https://docs.google.com/spreadsheets/d/11Kg0n5MFvHM08Ed08uESlgqseM7JwodzhpWpEoEcgWs/edit?usp=sharing)
 
 ## Tecnologias
 - Godot Engine
