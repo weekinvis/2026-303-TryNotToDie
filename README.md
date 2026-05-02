@@ -39,4 +39,4 @@ Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho 
 - Godot Engine
 
 ## Logo
-<img src="imgs/Logo.png" alt="Logo">
+<img src="imgs/Logo_TryNotToDie.png" alt="Logo">
