@@ -38,6 +38,12 @@ Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho 
 ## Pré-requisitos
 - Godot Engine (4.5 Stable)
 
+## Menu Principal
+<img src="imgs/Menu_Principal.png" alt="MenuPrc"></img>
+
+## Menu de Configurações
+<img src="imgs/Menu_Config.png" alt="MenuConf"></img>
+
 ## Logo
 <img src="imgs/Logo_TryNotToDie.png" alt="Logo">
 
