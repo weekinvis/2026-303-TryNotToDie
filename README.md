@@ -1,11 +1,11 @@
 # Try Not To Die
 
 ##  Grupo
-- Bernardo Drummond Oliveira Penna
-- Júlia Cruz Menezes
-- Verônica Fernandes Silva
-- Filipe Soares Palhares de Oliveira
-- Ítalo Gomes Bragança
+- <a href="https://github.com/weekinvis">Bernardo Drummond Oliveira Penna</a>
+- <a href="https://github.com/jujjujpg">Júlia Cruz Menezes</a>
+- <a href="https://github.com/veronikadesva">Verônica Fernandes Silva</a>
+- <a href="https://github.com/filipePalhares">Filipe Soares Palhares de Oliveira</a>
+- <a href="https://github.com/italicos">Ítalo Santos Bragança</a>
 
 ##  Descrição
 Ahh eu adoro essa região... Meio do continente, clima ameno, pessoa legais... definitivamente um lugar para se viver.
