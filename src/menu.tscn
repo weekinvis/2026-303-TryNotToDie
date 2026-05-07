@@ -464,13 +464,12 @@ scale = Vector2(12.397057, 12.776315)
 texture = ExtResource("11_h1wq0")
 metadata/_edit_lock_ = true
 
-[node name="ConfigManager" type="Node" parent="." node_paths=PackedStringArray("Container_Alpha_Menu", "Container_Beta_Menu", "Personagem_Menu", "Pelicula", "Box_Fonte")]
+[node name="ConfigManager" type="Node" parent="." node_paths=PackedStringArray("Container_Alpha_Menu", "Container_Beta_Menu", "Personagem_Menu", "Pelicula")]
 script = ExtResource("12_dwrpx")
 Container_Alpha_Menu = NodePath("../Container_Botoes_Menu")
 Container_Beta_Menu = NodePath("../Container_Config")
 Personagem_Menu = NodePath("../pers_menu")
 Pelicula = NodePath("../Pelicula")
-Box_Fonte = NodePath("")
 
 [node name="Pelicula" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.36078432)
@@ -495,7 +494,7 @@ grow_vertical = 2
 
 [node name="Botao_Static" type="Button" parent="Container_Config"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")

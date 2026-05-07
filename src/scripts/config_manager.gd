@@ -56,7 +56,6 @@ func animar_menu_config():
 	
 	tween.tween_property(Container_Beta_Menu, "visible", true, 0);
 	
-	Container_Beta_Menu.get_node("Botao_Retornar").grab_focus();
 
 func _on_botao_configuracoes_pressed() -> void:
 	if animar_config:
@@ -66,7 +65,7 @@ func _on_botao_configuracoes_pressed() -> void:
 		Personagem_Menu.position.x = tela.size.x;
 		Pelicula.visible = true;
 		Container_Beta_Menu.visible = true;
-		Container_Beta_Menu.get_node("Botao_Retornar").grab_focus();
+	Container_Beta_Menu.get_node("Botao_Retornar").grab_focus();
 
 func animar_menu_retorno():
 	var tween = create_tween();
@@ -79,7 +78,6 @@ func animar_menu_retorno():
 		.set_ease(Tween.EASE_IN);
 	
 	tween.tween_property(Container_Alpha_Menu, "visible", true, 0);
-	Container_Alpha_Menu.get_node("Botao_Jogar").grab_focus();
 
 func _on_botao_retornar_pressed() -> void:
 	if animar_config:
@@ -89,8 +87,7 @@ func _on_botao_retornar_pressed() -> void:
 		Container_Beta_Menu.visible = false;
 		Personagem_Menu.position.x = tela.size.x/2;
 		Container_Alpha_Menu.visible = true;
-		Container_Alpha_Menu.get_node("Botao_Jogar").grab_focus();
-
+	Container_Alpha_Menu.get_node("Botao_Jogar").grab_focus();
 
 func _on_h_slider_value_changed(value: float) -> void:
 	var tema = get_tree().root.theme;
