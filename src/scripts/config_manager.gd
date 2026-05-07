@@ -7,7 +7,7 @@ extends Node
 @export var Box_Fonte : HBoxContainer;
 
 var animar_config : bool = true;
-var valor_inicial_fonte : int = 25;
+var valor_inicial_fonte : int = 22;
 var tela : Viewport;
 
 func _ready() -> void:
@@ -22,19 +22,19 @@ func _ready() -> void:
 	var tamanho_tela = tela.get_visible_rect().size
 	var tamanho_textura = Pelicula.texture.get_size()
 	
-	var escala_x = (tamanho_tela.x / 3.0) / tamanho_textura.x
+	var escala_x = (tamanho_tela.x / 2.0) / tamanho_textura.x
 	var escala_y = tamanho_tela.y / tamanho_textura.y
 	
 	Pelicula.scale = Vector2(escala_x, escala_y)
 	Pelicula.position = Vector2(
-		tamanho_tela.x / 6.0, 
-		tamanho_tela.y / 2.0 
+		(tamanho_textura.x * escala_x) / 2.0,
+		tamanho_tela.y / 2.0
 	)
 	
 	Pelicula.visible = false;
 	
 	Container_Beta_Menu.position.y = tamanho_tela.y / 2.0  - (Container_Beta_Menu.size.y / 2);
-	Container_Beta_Menu.position.x = tamanho_tela.x / 12.0 - (Container_Beta_Menu.position.x / 24);
+	Container_Beta_Menu.position.x = tamanho_tela.x / 6.0 - (Container_Beta_Menu.position.x / 12.0);
 	
 	# Embora haja como deixar isso no slider, fiz assim para depois salvar as configuracoes no JSON
 	# e fazer com que a pessoa que esteja jogando nao precisasse toda hora mexer nesse valor.
@@ -88,6 +88,7 @@ func _on_botao_retornar_pressed() -> void:
 		Personagem_Menu.position.x = tela.size.x/2;
 		Container_Alpha_Menu.visible = true;
 	Container_Alpha_Menu.get_node("Botao_Jogar").grab_focus();
+	Container_Alpha_Menu.position.x = (tela.get_visible_rect().size.x / 2) - (Container_Alpha_Menu.size.x / 2);
 
 func _on_h_slider_value_changed(value: float) -> void:
 	var tema = get_tree().root.theme;

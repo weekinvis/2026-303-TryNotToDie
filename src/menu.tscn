@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://btbdwwvi2f82j"]
+[gd_scene load_steps=76 format=3 uid="uid://btbdwwvi2f82j"]
 
 [ext_resource type="Texture2D" uid="uid://q03pla352row" path="res://sprites/pixilart-sprite (1).png" id="1_lti8b"]
 [ext_resource type="Texture2D" uid="uid://bxvd2vkios24g" path="res://sprites/olho_roxo.png" id="2_ecwwl"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://3aeb0k5ttyx2" path="res://scripts/botao_jogar.gd" id="3_mae5d"]
 [ext_resource type="PackedScene" uid="uid://88ws72h7deyi" path="res://cenas/aba.tscn" id="4_4hy44"]
 [ext_resource type="Script" uid="uid://dcyj031r8gx0t" path="res://scripts/botao_configuracoes.gd" id="5_ytr4m"]
+[ext_resource type="FontFile" uid="uid://x15356k2nef" path="res://ARCADE_N.TTF" id="6_4ndjb"]
 [ext_resource type="Script" uid="uid://cuel662akpeoc" path="res://scripts/botao_sair.gd" id="6_l48gv"]
 [ext_resource type="Script" uid="uid://pgdfxckl15w5" path="res://scripts/camera_menu.gd" id="8_kk3ma"]
 [ext_resource type="Texture2D" uid="uid://b8c63t8n7rmkq" path="res://sprites/background_1.png" id="11_h1wq0"]
@@ -406,23 +407,24 @@ animation = &"piscar_olho_panela"
 script = ExtResource("2_ouk20")
 sprite = NodePath(".")
 camera_menu = NodePath("../Camera_Menu")
-min_easter_egg = 3
-max_easter_egg = 6
+min_easter_egg = 2
+max_easter_egg = 3
 tempo_pre_queda_dramatico = 1.1
 tempo_pos_queda = 3.4
 
 [node name="Container_Botoes_Menu" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 420.0
-offset_top = 470.0
-offset_right = 734.0
-offset_bottom = 589.0
+offset_left = 427.0
+offset_top = 499.0
+offset_right = 741.0
+offset_bottom = 618.0
 focus_mode = 2
 theme_override_constants/separation = 14
 
 [node name="Botao_Jogar" type="Button" parent="Container_Botoes_Menu"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_4ndjb")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ouk20")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_kk3ma")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mae5d")
@@ -434,6 +436,7 @@ abas = ExtResource("4_4hy44")
 [node name="Botao_Configuracoes" type="Button" parent="Container_Botoes_Menu"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_4ndjb")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4hy44")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_nrnbx")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ytr4m")
@@ -445,6 +448,7 @@ abas = ExtResource("4_4hy44")
 [node name="Botao_Sair" type="Button" parent="Container_Botoes_Menu"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_4ndjb")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
@@ -491,10 +495,12 @@ offset_right = 120.5
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 22
 
 [node name="Botao_Static" type="Button" parent="Container_Config"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_4ndjb")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
@@ -506,6 +512,7 @@ layout_mode = 2
 
 [node name="FonteTamanho" type="Label" parent="Container_Config/BoxFonte"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("6_4ndjb")
 text = "FONT-SIZE"
 horizontal_alignment = 1
 
@@ -524,6 +531,7 @@ script = ExtResource("16_gd0jp")
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0.45452422, 0.45452428, 0.45452422, 1)
+theme_override_fonts/font = ExtResource("6_4ndjb")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")

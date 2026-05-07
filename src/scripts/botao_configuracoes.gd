@@ -20,8 +20,8 @@ func desenhar_abas() -> void:
 	add_child(aba_direita)
 
 	# posiciona
-	aba_esquerda.position = Vector2(0 , size.y / 2)
-	aba_direita.position =  Vector2(size.x, size.y / 2)
+	aba_esquerda.position = Vector2(0 - 10.5, size.y / 2)
+	aba_direita.position =  Vector2(size.x + 10.5, size.y / 2)
 
 	# flip na da direita (ou esquerda, dependendo do sprite)
 	aba_direita.flip_h = true
