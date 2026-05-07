@@ -40,3 +40,4 @@ Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho 
 
 ## Logo
 <img src="imgs/Logo_TryNotToDie.png" alt="Logo">
+<a href="https://drive.google.com/drive/folders/1llBx95pg4eu_-IFZTqqcROQjQ9nTG5tp?usp=sharing">Versões Anteriores</a>
