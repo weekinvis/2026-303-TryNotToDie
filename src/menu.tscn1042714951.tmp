@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://btbdwwvi2f82j"]
+[gd_scene format=3 uid="uid://btbdwwvi2f82j"]
 
 [ext_resource type="Texture2D" uid="uid://q03pla352row" path="res://sprites/pixilart-sprite (1).png" id="1_lti8b"]
 [ext_resource type="Texture2D" uid="uid://bxvd2vkios24g" path="res://sprites/olho_roxo.png" id="2_ecwwl"]
@@ -13,8 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://b8c63t8n7rmkq" path="res://sprites/background_1.png" id="11_h1wq0"]
 [ext_resource type="Script" uid="uid://dacv4fb5v7imw" path="res://scripts/config_manager.gd" id="12_dwrpx"]
 [ext_resource type="Texture2D" uid="uid://b27t0w7trg22m" path="res://sprites/pelicula.png" id="13_g7jxm"]
-[ext_resource type="Script" uid="uid://bpqmo6qdd6grc" path="res://scripts/botao_static.gd" id="14_gd0jp"]
 [ext_resource type="Script" uid="uid://bsn3k0lj5r3mx" path="res://scripts/botao_retornar.gd" id="14_jspdm"]
+[ext_resource type="Script" uid="uid://cmhhnino8228s" path="res://scripts/bind_up.gd" id="14_oxnod"]
 [ext_resource type="Script" uid="uid://kgisaggyli0n" path="res://scripts/tamanho_fonte_slider.gd" id="16_gd0jp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ouk20"]
@@ -388,7 +388,7 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ls4m"]
 
-[node name="Menu" type="Control"]
+[node name="Menu" type="Control" unique_id=1462356769]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -397,10 +397,10 @@ offset_left = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="pers_menu" type="AnimatedSprite2D" parent="." node_paths=PackedStringArray("sprite", "camera_menu")]
+[node name="pers_menu" type="AnimatedSprite2D" parent="." unique_id=1447029701 node_paths=PackedStringArray("sprite", "camera_menu")]
 texture_filter = 1
-position = Vector2(578, 450.99994)
-scale = Vector2(2.9032378, 2.6833587)
+position = Vector2(581, 467.00003)
+scale = Vector2(2.9032378, 2.8719878)
 sprite_frames = SubResource("SpriteFrames_g7jxm")
 animation = &"piscar_olho_panela"
 script = ExtResource("2_ouk20")
@@ -411,16 +411,16 @@ max_easter_egg = 6
 tempo_pre_queda_dramatico = 1.1
 tempo_pos_queda = 3.4
 
-[node name="Container_Botoes_Menu" type="VBoxContainer" parent="."]
+[node name="Container_Botoes_Menu" type="VBoxContainer" parent="." unique_id=2126286030]
 layout_mode = 0
-offset_left = 420.0
-offset_top = 470.0
-offset_right = 734.0
-offset_bottom = 589.0
+offset_left = 419.0
+offset_top = 489.0
+offset_right = 733.0
+offset_bottom = 608.0
 focus_mode = 2
 theme_override_constants/separation = 14
 
-[node name="Botao_Jogar" type="Button" parent="Container_Botoes_Menu"]
+[node name="Botao_Jogar" type="Button" parent="Container_Botoes_Menu" unique_id=465377329]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ouk20")
@@ -431,7 +431,7 @@ text = "PLAY"
 script = ExtResource("3_mae5d")
 abas = ExtResource("4_4hy44")
 
-[node name="Botao_Configuracoes" type="Button" parent="Container_Botoes_Menu"]
+[node name="Botao_Configuracoes" type="Button" parent="Container_Botoes_Menu" unique_id=2088465463]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4hy44")
@@ -442,7 +442,7 @@ text = "CONFIGURATIONS"
 script = ExtResource("5_ytr4m")
 abas = ExtResource("4_4hy44")
 
-[node name="Botao_Sair" type="Button" parent="Container_Botoes_Menu"]
+[node name="Botao_Sair" type="Button" parent="Container_Botoes_Menu" unique_id=831782341]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
@@ -453,10 +453,10 @@ text = "EXIT"
 script = ExtResource("6_l48gv")
 abas = ExtResource("4_4hy44")
 
-[node name="Camera_Menu" type="Camera2D" parent="."]
+[node name="Camera_Menu" type="Camera2D" parent="." unique_id=24338671]
 script = ExtResource("8_kk3ma")
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="." unique_id=58248473]
 z_index = -10
 texture_filter = 1
 position = Vector2(600, 450.49994)
@@ -464,21 +464,21 @@ scale = Vector2(12.397057, 12.776315)
 texture = ExtResource("11_h1wq0")
 metadata/_edit_lock_ = true
 
-[node name="ConfigManager" type="Node" parent="." node_paths=PackedStringArray("Container_Alpha_Menu", "Container_Beta_Menu", "Personagem_Menu", "Pelicula", "Box_Fonte")]
+[node name="ConfigManager" type="Node" parent="." unique_id=1821646462 node_paths=PackedStringArray("Container_Alpha_Menu", "Container_Beta_Menu", "Personagem_Menu", "Pelicula", "Box_Fonte")]
 script = ExtResource("12_dwrpx")
 Container_Alpha_Menu = NodePath("../Container_Botoes_Menu")
 Container_Beta_Menu = NodePath("../Container_Config")
 Personagem_Menu = NodePath("../pers_menu")
 Pelicula = NodePath("../Pelicula")
-Box_Fonte = NodePath("")
+Box_Fonte = NodePath("../Container_Config/BoxFonte")
 
-[node name="Pelicula" type="Sprite2D" parent="."]
+[node name="Pelicula" type="Sprite2D" parent="." unique_id=12914104]
 modulate = Color(1, 1, 1, 0.36078432)
 z_index = -1
 position = Vector2(2431, 430)
 texture = ExtResource("13_g7jxm")
 
-[node name="Container_Config" type="VBoxContainer" parent="."]
+[node name="Container_Config" type="VBoxContainer" parent="." unique_id=1714361075]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -493,35 +493,68 @@ offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Botao_Static" type="Button" parent="Container_Config"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
-text = "REMOVE ANIMATIONS"
-script = ExtResource("14_gd0jp")
-
-[node name="BoxFonte" type="VBoxContainer" parent="Container_Config"]
+[node name="BoxFonte" type="HBoxContainer" parent="Container_Config" unique_id=1221669683]
 layout_mode = 2
 
-[node name="FonteTamanho" type="Label" parent="Container_Config/BoxFonte"]
+[node name="FonteTamanho" type="Label" parent="Container_Config/BoxFonte" unique_id=2056793632]
 layout_mode = 2
 text = "FONT-SIZE"
-horizontal_alignment = 1
 
-[node name="SliderFonte" type="HSlider" parent="Container_Config/BoxFonte"]
+[node name="SliderFonte" type="HSlider" parent="Container_Config/BoxFonte" unique_id=2017616609]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
-size_flags_stretch_ratio = 0.0
 min_value = 22.0
-max_value = 33.0
-value = 22.0
+max_value = 30.0
+value = 25.0
 rounded = true
 script = ExtResource("16_gd0jp")
 
-[node name="Botao_Retornar" type="Button" parent="Container_Config"]
+[node name="BindUp" type="Button" parent="Container_Config" unique_id=288289902]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.45452422, 0.45452428, 0.45452422, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
+text = "RETURN"
+script = ExtResource("14_oxnod")
+
+[node name="BindLeft" type="Button" parent="Container_Config" unique_id=337993126]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.45452422, 0.45452428, 0.45452422, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
+text = "RETURN"
+
+[node name="BindRight" type="Button" parent="Container_Config" unique_id=588453942]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.45452422, 0.45452428, 0.45452422, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
+text = "RETURN"
+
+[node name="BindDown" type="Button" parent="Container_Config" unique_id=1017914064]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.45452422, 0.45452428, 0.45452422, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l48gv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqepy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ecwwl")
+text = "RETURN"
+
+[node name="Botao_Retornar" type="Button" parent="Container_Config" unique_id=1094984337]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0.45452422, 0.45452428, 0.45452422, 1)
@@ -536,8 +569,6 @@ abas = ExtResource("4_4hy44")
 [connection signal="focus_exited" from="Container_Botoes_Menu/Botao_Jogar" to="Container_Botoes_Menu/Botao_Jogar" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="Container_Botoes_Menu/Botao_Jogar" to="Container_Botoes_Menu/Botao_Jogar" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Container_Botoes_Menu/Botao_Jogar" to="Container_Botoes_Menu/Botao_Jogar" method="_on_mouse_exited"]
-[connection signal="focus_entered" from="Container_Botoes_Menu/Botao_Configuracoes" to="Container_Botoes_Menu/Botao_Configuracoes" method="_on_focus_entered"]
-[connection signal="focus_exited" from="Container_Botoes_Menu/Botao_Configuracoes" to="Container_Botoes_Menu/Botao_Configuracoes" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="Container_Botoes_Menu/Botao_Configuracoes" to="Container_Botoes_Menu/Botao_Configuracoes" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Container_Botoes_Menu/Botao_Configuracoes" to="Container_Botoes_Menu/Botao_Configuracoes" method="_on_mouse_exited"]
 [connection signal="pressed" from="Container_Botoes_Menu/Botao_Configuracoes" to="ConfigManager" method="_on_botao_configuracoes_pressed"]
@@ -546,8 +577,7 @@ abas = ExtResource("4_4hy44")
 [connection signal="mouse_entered" from="Container_Botoes_Menu/Botao_Sair" to="Container_Botoes_Menu/Botao_Sair" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Container_Botoes_Menu/Botao_Sair" to="Container_Botoes_Menu/Botao_Sair" method="_on_mouse_exited"]
 [connection signal="pressed" from="Container_Botoes_Menu/Botao_Sair" to="Container_Botoes_Menu/Botao_Sair" method="_on_pressed"]
-[connection signal="pressed" from="Container_Config/Botao_Static" to="pers_menu" method="_on_botao_static_pressed"]
-[connection signal="pressed" from="Container_Config/Botao_Static" to="ConfigManager" method="_on_botao_static_pressed"]
-[connection signal="pressed" from="Container_Config/Botao_Static" to="Container_Config/Botao_Static" method="_on_pressed"]
 [connection signal="value_changed" from="Container_Config/BoxFonte/SliderFonte" to="ConfigManager" method="_on_h_slider_value_changed"]
+[connection signal="mouse_entered" from="Container_Config/Botao_Retornar" to="Container_Config/Botao_Retornar" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Container_Config/Botao_Retornar" to="Container_Config/Botao_Retornar" method="_on_mouse_exited"]
 [connection signal="pressed" from="Container_Config/Botao_Retornar" to="ConfigManager" method="_on_botao_retornar_pressed"]

@@ -10,6 +10,7 @@ extends AnimatedSprite2D
 
 @onready var piscar_olho_timer : Timer = Timer.new();
 
+var retirar_animacao : bool = false;
 var escala_inicial : Vector2;
 var seno_periodo : float;
 var animacao_atual : String = "piscar_olho_panela";
@@ -19,6 +20,9 @@ var caiu : bool = false;
 var posicao_inicial : Vector2;
 
 func piscar_olho() -> void:
+	if retirar_animacao:
+		return;
+	
 	piscar_olho_timer.start(randf() * 7 + 5);
 	sprite.play(animacao_atual);
 	
@@ -41,8 +45,9 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 
-	seno_periodo += delta * vel_resp;
-	sprite.scale = escala_inicial * lerp(0.995, 1.005 , sin(seno_periodo));
+	if not retirar_animacao:
+		seno_periodo += delta * vel_resp;
+		sprite.scale = escala_inicial * lerp(0.995, 1.005 , sin(seno_periodo));
 
 func animar_queda() -> void:
 	if caiu:
@@ -83,3 +88,7 @@ func animar_queda() -> void:
 	tween.tween_property(sprite, "position:y", y_inicial, 0.6)\
 		.set_trans(Tween.TRANS_BACK)\
 		.set_ease(Tween.EASE_OUT);
+
+
+func _on_botao_static_pressed() -> void:
+	retirar_animacao = !retirar_animacao;
