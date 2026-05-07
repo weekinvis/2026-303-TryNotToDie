@@ -33,10 +33,10 @@ Eu acho que é isso, terei de ser a babá transcendental desse ser. Mas eu acho 
 [https://docs.google.com/spreadsheets/d/1dkuoAKhzCxO3Dyvumb3WQBkTx3__kUGrkdoGaXqfHdI/edit?usp=sharing](https://docs.google.com/spreadsheets/d/11Kg0n5MFvHM08Ed08uESlgqseM7JwodzhpWpEoEcgWs/edit?usp=sharing)
 
 ## Tecnologias
-- Godot Engine
+- Godot Engine (4.5 Stable)
 
 ## Pré-requisitos
-- Godot Engine
+- Godot Engine (4.5 Stable)
 
 ## Logo
 <img src="imgs/Logo_TryNotToDie.png" alt="Logo">
